@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "FADC5293-06E1-45F9-9E54-E1A651E4CA75"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "54F71EB9-F21D-4B60-90E4-9CF6C28F8365"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SegueApp/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "54F71EB9-F21D-4B60-90E4-9CF6C28F8365 - e2e13d9a653d6b9d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SegueApp.ViewController.lblFirst.getter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "SegueApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hakancaglayan/Desktop/Swift/SegueApp/SegueApp/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "54F71EB9-F21D-4B60-90E4-9CF6C28F8365 - 3a773f0a01808de9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SegueApp.ViewController.lblFirst.setter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "SegueApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hakancaglayan/Desktop/Swift/SegueApp/SegueApp/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "54F71EB9-F21D-4B60-90E4-9CF6C28F8365 - 4223b9ff49a4ecfe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SegueApp.ViewController.lblFirst.modify : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "SegueApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hakancaglayan/Desktop/Swift/SegueApp/SegueApp/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "54F71EB9-F21D-4B60-90E4-9CF6C28F8365 - d4bea414853fab2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SegueApp.ViewController.lblFirst.modify : Swift.Optional&lt;__C.UILabel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "SegueApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hakancaglayan/Desktop/Swift/SegueApp/SegueApp/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "54F71EB9-F21D-4B60-90E4-9CF6C28F8365 - af4c6f40d9976a9a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SegueApp.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; SegueApp.ViewController"
+                  moduleName = "SegueApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hakancaglayan/Desktop/Swift/SegueApp/SegueApp/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "54F71EB9-F21D-4B60-90E4-9CF6C28F8365 - 4aa5cdac9827d78c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SegueApp.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;SegueApp.ViewController&gt;"
+                  moduleName = "SegueApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hakancaglayan/Desktop/Swift/SegueApp/SegueApp/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "48">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
