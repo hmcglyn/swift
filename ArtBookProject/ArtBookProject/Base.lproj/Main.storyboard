@@ -110,6 +110,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="UJB-q1-JYG"/>
                     <connections>
+                        <outlet property="btnSave" destination="tBh-gM-cp8" id="pef-GD-SAd"/>
                         <outlet property="imgPhoto" destination="WAa-nk-XqZ" id="V6r-rZ-kbC"/>
                         <outlet property="txtArtist" destination="8Si-wZ-rZn" id="aGz-R0-pnS"/>
                         <outlet property="txtName" destination="Aoh-jF-evk" id="BLc-gO-HRy"/>

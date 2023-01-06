@@ -14,6 +14,7 @@ class DetailsVC: UIViewController,UIImagePickerControllerDelegate,UINavigationCo
     @IBOutlet weak var txtArtist: UITextField!
     @IBOutlet weak var imgPhoto: UIImageView!
     @IBOutlet weak var txtYear: UITextField!
+    @IBOutlet weak var btnSave: UIButton!
     var chosenPainting=""
     var chosenPaintingId : UUID?
     override func viewDidLoad() {
@@ -21,6 +22,7 @@ class DetailsVC: UIViewController,UIImagePickerControllerDelegate,UINavigationCo
         
         if(chosenPainting != "")
         {
+            btnSave.isHidden=true
             //Core Data
             let appDelegate=UIApplication.shared.delegate as! AppDelegate
             let context=appDelegate.persistentContainer.viewContext
@@ -58,6 +60,11 @@ class DetailsVC: UIViewController,UIImagePickerControllerDelegate,UINavigationCo
                 print("error")
             }
         }
+        else
+        {
+            btnSave.isEnabled=false
+            btnSave.isHidden=false
+        }
         
         //Recognizers
         let gestureRecognizer=UITapGestureRecognizer(target: self, action: #selector(HideKeyboard))
@@ -77,9 +84,10 @@ class DetailsVC: UIViewController,UIImagePickerControllerDelegate,UINavigationCo
         picker.allowsEditing = true
         present(picker, animated: true,completion: nil)
     }
-    
+    //img picker photo seçimi
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         imgPhoto.image=info[.originalImage] as? UIImage
+        btnSave.isEnabled=true
         self.dismiss(animated: true)
     }
    
