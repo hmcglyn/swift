@@ -8,12 +8,38 @@
 import UIKit
 import MapKit
 import CoreLocation
+import CoreData
 
 
 class ViewController: UIViewController,MKMapViewDelegate, CLLocationManagerDelegate {
-
+    var chosenLatitude = Double()
+    var chosenLongitude=Double()
+    @IBOutlet weak var txtName: UITextField!
+    
+    @IBOutlet weak var txtNote: UITextField!
     var locationManager  = CLLocationManager()
     
+    @IBAction func btnSave(_ sender: Any) {
+        let appDelegate=UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        
+        let newPlace=NSEntityDescription.insertNewObject(forEntityName: "Places", into: context)
+        
+        newPlace.setValue(txtName.text, forKey: "title")
+        newPlace.setValue(txtNote.text, forKey: "subtitle")
+        newPlace.setValue(chosenLatitude, forKey:"latitude")
+        newPlace.setValue(chosenLongitude, forKey: "longitude")
+        newPlace.setValue(UUID(), forKey: "id")
+        
+        do
+        {
+            try context.save()
+            print("success")
+        } catch{
+            print("error")
+        }
+        
+    }
     @IBOutlet weak var mpView: MKMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,11 +71,14 @@ class ViewController: UIViewController,MKMapViewDelegate, CLLocationManagerDeleg
             
             //koordinatlara convert etme
             let touchedCoordinates=self.mpView.convert(touchedPoint, toCoordinateFrom: self.mpView)
+            
+            chosenLatitude=touchedCoordinates.latitude
+            chosenLongitude=touchedCoordinates.longitude
             //pin oluşturma
             let annotation=MKPointAnnotation()
             annotation.coordinate=touchedCoordinates
-            annotation.title="New Annotation"
-            annotation.subtitle="Travel Book"
+            annotation.title=txtName.text
+            annotation.subtitle=txtNote.text
             mpView.addAnnotation(annotation )
         }
     }
